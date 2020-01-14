@@ -44,14 +44,6 @@ class About extends PureComponent {
                   <span>{email}</span>
                 </p>
               </div>
-              <div className="columns download">
-                <p>
-                  <a href={resumeDownload} className="button">
-                    <i className="fa fa-download" />
-                    Download Resume
-                  </a>
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getResumeData() {
-    fetch("/resumeData.json", {
+    fetch("./resumeData.json", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
