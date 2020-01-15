@@ -7,14 +7,14 @@ class About extends PureComponent {
     const {
       email, image, bio, address,
     } = data;
-    const profilepic = `images/${image}`;
+    const profilepic = (image && `images/${image}`) || "";
     const { home, city } = address;
 
     return (
       <section id="about">
         <div className="row">
           <div className="three columns">
-            <img className="profile-pic" src={profilepic} alt="Tim Baker Profile Pic" />
+            <img className="profile-pic" src={profilepic} alt="avatar" />
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
