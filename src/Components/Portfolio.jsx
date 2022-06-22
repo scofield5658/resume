@@ -2,14 +2,22 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 class Portfolio extends PureComponent {
+  handleProjectJump = (url) => {
+    if (!url) {
+      console.log('unknown url');
+      return;
+    }
+    window.open(url);
+  }
+
   render() {
     const { data } = this.props;
     const projects = data.projects.map((project) => {
-      const projectImage = `images/portfolio/${project.image}`;
+      const projectImage = `${process.env.PUBLIC_URL}/images/portfolio/${project.image}`;
       return (
         <div key={project.title} className="columns portfolio-item">
           <div className="item-wrap">
-            <a href={project.url} title={project.title}>
+            <span href={project.url} title={project.title} onClick={() => this.handleProjectJump(project.url)}>
               <img alt={project.title} src={projectImage} />
               <div className="overlay">
                 <div className="portfolio-item-meta">
@@ -18,7 +26,7 @@ class Portfolio extends PureComponent {
                 </div>
               </div>
               <div className="link-icon"><i className="fa fa-link" /></div>
-            </a>
+            </span>
           </div>
         </div>
       );
@@ -26,13 +34,9 @@ class Portfolio extends PureComponent {
 
     return (
       <section id="portfolio">
-
         <div className="row">
-
           <div className="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
+            <h1>Check Out Some of My/Participated Works.</h1>
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
               {projects}
             </div>

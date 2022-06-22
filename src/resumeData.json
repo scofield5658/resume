@@ -1,0 +1,135 @@
+{
+  "main": {
+    "name": "Scofield Guo",
+    "occupation": "System Architect & Full Stack Engineer",
+    "image": "profilepic.jpg",
+    "bio": "Strong reasoning && proficient skills for handling issues and providing constructive solutions. Passion for latest/amazing technologies, applications.",
+    "contactmessage": "Please contact me if interested in related fields",
+    "email": "guoz5658@outlook.com",
+    "address": {
+      "home": "Dalian, Liaoning",
+      "city": "Guangzhou, Guangdong"
+    },
+    "website": "https://github.com/scofield5658",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.cn/incareer/in/scofield5658",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/scofield5658",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "educations": [
+      {
+        "school": "Xidian University",
+        "degree": "Master in CS",
+        "graduated": "Jan. 2016",
+        "description": "Software Engineering & Machine Learning"
+      },
+      {
+        "school": "Dalian Maritime University",
+        "degree": "Bachelor",
+        "graduated": "July. 2013",
+        "description": "Electronic & Information Engineering"
+      }
+    ],
+    "works": [
+      {
+        "company": "GF Securities",
+        "title": "System Architect",
+        "years": "Oct. 2019 - Present",
+        "description": "*",
+        "location": "Guangzhou"
+      },
+      {
+        "company": "Geekthing",
+        "title": "Full Stack Engineer",
+        "years": "Mar. 2019 - Sep. 2019",
+        "description": "Supports for business system related to investment research",
+        "location": "Shanghai"
+      },
+      {
+        "company": "Finogeeks",
+        "title": "Full Stack Engineer",
+        "years": "Jun. 2017 - Feb. 2019",
+        "description": "Focused on CRM products with secure team collaboration",
+        "location": "Guangzhou"
+      },
+      {
+        "company": "GF Securites",
+        "title": "Software Developer",
+        "years": "Mar. 2016 - Jun. 2017",
+        "description": "Focused on backend of trading system providing high efficiency & stability",
+        "location": "Guangzhou"
+      }
+    ],
+    "skills": [
+      {
+        "name": "NodeJs",
+        "level": "80%"
+      },
+      {
+        "name": "ReactJs/VueJs",
+        "level": "80%"
+      },
+      {
+        "name": "Java",
+        "level": "70%"
+      },
+      {
+        "name": "Python",
+        "level": "50%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "70%"
+      },
+      {
+        "name": "Redis",
+        "level": "70%"
+      },
+      {
+        "name": "Docker",
+        "level": "70%"
+      },
+      {
+        "name": "Git",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Reus",
+        "category": "基于NodeJS的全栈框架",
+        "image": "reus.png",
+        "url": "https://github.com/scofield5658/reus"
+      },
+      {
+        "title": "Goats",
+        "category": "场外衍生品统一客户端",
+        "image": "goats.png",
+        "url": "https://goats.gf.com.cn"
+      },
+      {
+        "title": "FinChat & FinClip",
+        "category": "助力金融机构数字化转型",
+        "image": "finogeeks.png",
+        "url": "https://www.finogeeks.com"
+      },
+      {
+        "title": "国盛研究",
+        "category": "打造极致专业与效率",
+        "image": "gs_research.png",
+        "url": "https://research.gszq.com"
+      }
+    ]
+  }
+}

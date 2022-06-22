@@ -5,7 +5,7 @@ class Resume extends PureComponent {
   render() {
     const { data } = this.props;
     const {
-      skillmessage, educations, works, skills,
+      educations, works, skills,
     } = data;
     const educationComponent = educations.map((education) => (
       <div key={education.school}>
@@ -27,9 +27,15 @@ class Resume extends PureComponent {
           <span>&bull;</span>
           {" "}
           <em className="date">{work.years}</em>
+          <span>&bull;</span>
+          {" "}
+          <em>
+            <span className="fa fa-map-marker" />
+            {" "}
+            {work.location}
+          </em>
         </p>
         <p>{work.description}</p>
-        <p>{work.location}</p>
       </div>
     ));
     const skillsComponent = skills.map((skill) => {
@@ -73,7 +79,6 @@ class Resume extends PureComponent {
             <h1><span>Skills</span></h1>
           </div>
           <div className="nine columns main-col">
-            <p>{skillmessage}</p>
             <div className="bars">
               <ul className="skills">{skillsComponent}</ul>
             </div>
